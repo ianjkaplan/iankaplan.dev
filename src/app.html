@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="description" content="" />
-		<link rel="icon" href="%svelte.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		%svelte.head%
-	</head>
-	<body>
-		<div>%svelte.body%</div>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+            * {
+                font-family: "IBM Plex Mono", monospace;
+            }
+        </style>
+        <link rel="icon" href="/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Fonts -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans+Thai+Looped:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- SMUI Styles
+		<link rel="stylesheet" href="/smui.css" media="(prefers-color-scheme: light)" />
+		<link rel="stylesheet" href="/smui-dark.css" media="screen and (prefers-color-scheme: dark)" /> -->
+        %svelte.head%
+    </head>
+    <body>
+        <div id="svelte">%svelte.body%</div>
+    </body>
 </html>
